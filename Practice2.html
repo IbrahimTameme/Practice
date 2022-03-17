@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: gray;
+        }
+
+        .border1 {
+            width: 100%;
+            display: flex;
+
+            justify-content: center;
+        }
+
+
+
+
+        .img-a {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            clip-path: circle(50%);
+
+            background-image: url(./Images/one.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            
+
+
+        }
+
+        .img-b {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+            background-image: url(./Images/tw.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            border-radius: 22% 59% 29% 55% / 40% 40% 40% 40% ;
+            
+
+        }
+
+        .img-c {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            background-image: url(./Images/thre.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            border-radius: 43% 62% 34% 36% / 47% 50% 31% 29%  ;
+
+        }
+
+        .hover-text {
+            background-color: rgba(184, 184, 184, 0.568);
+            height: 100%;
+            color: white;
+            display: none;
+
+        }
+
+        .title {
+            font-size: x-small;
+            margin-top: 20%;
+            border-bottom: 0.5px solid rgba(19, 19, 19, 0.774);
+            height: 20%;
+            width: 100%;
+            text-align: center;
+            display: block;
+
+
+
+        }
+
+        .teext {
+            font-size: 8px;
+            text-align: center;
+
+        }
+
+        
+        .img-a:hover>.hover-text {
+            display: initial;
+        }
+
+
+        .img-b:hover>.hover-text {
+            display: initial;
+        }
+
+
+        .img-c:hover>.hover-text {
+            display: initial;
+        }
+
+
+        @media (max-width:370px) {
+            .border1 {
+                justify-content: first baseline;
+
+                flex-direction: column;
+                height: 20%;
+
+            }
+        }
+
+        img {
+            border-radius: 10%;
+            z-index: -1;
+            position: absolute;
+            height: inherit;
+            width: inherit;
+           border-radius: 51% 50% 34% 36% / 62% 57% 31% 29%  ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border1">
+        <div class="img-a">
+           
+            <div class="hover-text">
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+
+
+        </div>
+        <div class="img-b">
+            
+            <div class="hover-text">
+
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="img-c">
+            <div class="hover-text">
+
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+            
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="border1">
+        <div class="img-a">
+            <div class="hover-text">
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+
+
+        </div>
+        <div class="img-b">
+            <div class="hover-text">
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="img-c">
+            <div class="hover-text">
+                <div class="title">Lorem ipsum</div>
+                <div class="teext">From an expression of need (mock-up) and an existing static user interface:</div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
